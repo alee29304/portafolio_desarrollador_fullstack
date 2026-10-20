@@ -1,0 +1,369 @@
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #0d1018;
+    color: #f1f3f9;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* MENÚ LATERAL */
+
+.menu-lateral {
+    width: 245px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 38px 25px;
+    background-color: #141925;
+    border-right: 1px solid #272d3b;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 65px;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #8b7cff;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu a {
+    padding: 12px 15px;
+    border-radius: 10px;
+    color: #b8bfd0;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.activo {
+    background: linear-gradient(110deg, #5145df, #7867ff);
+    color: white;
+    transform: translateX(4px);
+}
+
+.menu-pie {
+    margin-top: auto;
+    color: #8992a8;
+    font-size: 13px;
+    border-top: 1px solid #292f3d;
+    padding-top: 18px;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido {
+    margin-left: 245px;
+    min-height: 100vh;
+}
+
+/* BARRA SUPERIOR */
+
+.navbar {
+    height: 76px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #252b38;
+    background-color: #0d1018;
+}
+
+.navbar>p {
+    color: #aab2c6;
+    font-size: 14px;
+}
+
+.navbar-enlaces {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+    color: #c5cada;
+}
+
+.navbar-enlaces a:hover {
+    color: #a294ff;
+}
+
+/* PRESENTACIÓN */
+
+.presentacion {
+    min-height: 570px;
+    padding: 70px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background:
+        radial-gradient(ellipse at 90% 45%, #292052 0%, transparent 42%),
+        #0d1018;
+    border-bottom: 1px solid #252b38;
+}
+
+.presentacion-texto {
+    max-width: 610px;
+}
+
+.etiqueta {
+    color: #a294ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.presentacion h1 {
+    font-size: clamp(38px, 4.2vw, 62px);
+    line-height: 1.15;
+    letter-spacing: -2px;
+    margin-bottom: 18px;
+}
+
+.presentacion h1 span {
+    color: #9383ff;
+}
+
+.presentacion h2 {
+    color: #d5d9e5;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    max-width: 530px;
+    color: #9da6ba;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.presentacion-botones {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.boton-principal,
+.boton-secundario {
+    display: inline-block;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.boton-principal {
+    background: linear-gradient(110deg, #438dff, #a65cff);
+    color: white;
+}
+
+.boton-principal:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px #7255ff45;
+}
+
+.boton-secundario {
+    border: 1px solid #7467d9;
+    color: #d4ceff;
+}
+
+.boton-secundario:hover {
+    background-color: #7467d91c;
+}
+
+/* FOTOGRAFÍA */
+
+.presentacion-foto {
+    width: 290px;
+    min-width: 230px;
+    text-align: center;
+}
+
+.foto-marco {
+    width: 260px;
+    height: 320px;
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 48% 48% 18px 18px;
+    background: linear-gradient(145deg, #478dff, #a45aff);
+    box-shadow: 0 0 45px #7054ff24;
+}
+
+.foto-marco img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: inherit;
+    background-color: #202638;
+}
+
+.foto-texto {
+    color: #9ca5ba;
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+/* SECCIONES */
+
+.seccion {
+    padding: 75px 7%;
+    border-bottom: 1px solid #252b38;
+}
+
+.seccion h2 {
+    font-size: 30px;
+    letter-spacing: -0.7px;
+    margin-bottom: 18px;
+}
+
+.seccion>p:last-child {
+    color: #a4acc0;
+    max-width: 700px;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    padding: 25px 7%;
+    color: #7f899f;
+    font-size: 13px;
+}
+
+/* TABLETS Y PANTALLAS PEQUEÑAS */
+
+@media (max-width: 1000px) {
+    .menu-lateral {
+        width: 205px;
+        padding: 30px 18px;
+    }
+
+    .contenido {
+        margin-left: 205px;
+    }
+
+    .presentacion {
+        padding: 55px 5%;
+        gap: 25px;
+    }
+
+    .presentacion-foto {
+        width: 230px;
+        min-width: 190px;
+    }
+
+    .foto-marco {
+        height: 280px;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+}
+
+/* TELÉFONOS */
+
+@media (max-width: 700px) {
+    .menu-lateral {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 18px;
+        border-right: none;
+        border-bottom: 1px solid #272d3b;
+    }
+
+    .logo {
+        margin-bottom: 18px;
+    }
+
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .menu a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .menu-pie {
+        display: none;
+    }
+
+    .contenido {
+        margin-left: 0;
+    }
+
+    .navbar {
+        height: auto;
+        min-height: 60px;
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 15px 6%;
+    }
+
+    .navbar-enlaces {
+        gap: 15px;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 45px 7%;
+        gap: 35px;
+    }
+
+    .presentacion-foto {
+        align-self: center;
+        width: 220px;
+    }
+
+    .foto-marco {
+        height: 260px;
+    }
+
+    .presentacion h1 {
+        font-size: 40px;
+    }
+
+    .presentacion h2 {
+        font-size: 19px;
+    }
+
+    .seccion {
+        padding: 50px 7%;
+    }
+
+    .seccion h2 {
+        font-size: 26px;
+    }
+}
