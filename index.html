@@ -16,7 +16,6 @@
 </head>
 
 <body>
-
     <aside class="menu-lateral">
         <a href="#inicio" class="logo">Mi<span>Portafolio</span></a>
         <!-- Barra de navegación -->
@@ -27,49 +26,37 @@
             <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
         </nav>
-
         <div class="menu-pie">
             <p>Estudiante de Programación</p>
             <p>Liceo Vate Vicente Huidobro</p>
             <p>Chile · 2026</p>
         </div>
     </aside>
-
     <!-- Sección principal -->
     <main class="contenido">
         <header class="navbar">
             <p>Portafolio personal</p>
-
             <div class="navbar-enlaces">
                 <a href="#proyectos">Mis proyectos</a>
                 <a href="#contacto">Hablemos</a>
             </div>
         </header>
-
         <!-- Inicio del portafolio -->
         <section class="presentacion" id="inicio">
             <div class="presentacion-texto">
                 <p class="etiqueta">ESTUDIANTE · DESARROLLADOR FULLSTACK</p>
-
                 <h1>Hola, soy <span>Alexander Pino</span></h1>
                 <h2>Aprendiendo a convertir ideas o necesidades en proyectos</h2>
                 <p class="descripcion">
                     Completé mi enseñanza media, formándome en desarrollo web.
                     Me interesa crear sitios web y aplicaciones que
-                    sean innovadoras y 
+                    sean innovadoras y accesibles.
                 </p>
-
                 <div class="presentacion-botones">
-                    <a href="#proyectos" class="boton-principal">
-                        Ver mis proyectos ↗
-                    </a>
-
-                    <a href="#sobre-mi" class="boton-secundario">
-                        Conocerme
-                    </a>
+                    <a href="#proyectos" class="boton-principal">Ver mis proyectos ↗</a>
+                    <a href="#sobre-mi" class="boton-secundario">Conocerme</a>
                 </div>
             </div>
-
             <div class="presentacion-foto">
                 <div class="foto-marco">
                     <img src="static/img/mi-foto.jpg" alt="Foto personal">
@@ -77,44 +64,89 @@
                 <p class="foto-texto">En constante aprendizaje.</p>
             </div>
         </section>
-
         <!-- Sobre mí -->
         <section class="seccion" id="sobre-mi">
             <p class="etiqueta">UN POCO SOBRE MÍ</p>
-            <h2>Construyendo mi camino en tecnología.</h2>
+            <h2>Construyendo mi camino en la tecnología.</h2>
             <p>
-                Aquí contaré más sobre mi formación, mis intereses
-                y lo que quiero aprender en el mundo del desarrollo.
+                Estoy recién egresado y me gustaría seguir formandome en el desarrollo web y en el mundo de la
+                programación,
+                seguir estudiando en el mismo área me puede abrir muchas puertas las cuales me servirán en
+                el futuro.
             </p>
         </section>
-
         <!-- Habilidades -->
         <section class="seccion" id="habilidades">
             <p class="etiqueta">LO QUE ESTOY APRENDIENDO</p>
             <h2>Mis habilidades</h2>
-            <p>HTML · CSS · JavaScript · Git · GitHub</p>
+            <p>Me he especializado en HTML · CSS · JavaScript · MySQL · Flask · Python</p>
         </section>
-
         <!-- Proyectos -->
         <section class="seccion" id="proyectos">
             <p class="etiqueta">MI TRABAJO</p>
             <h2>Proyectos seleccionados</h2>
-            <p>Pronto agregaremos aquí tus proyectos con sus imágenes y enlaces.</p>
-        </section>
 
+            <div class="proyectos-contenedor">
+
+                <div class="tarjeta-proyecto">
+                    <img src="static/images/proyecto1.jpg" alt="Proyecto HeadSafe">
+                    <div class="proyecto-info">
+                        <h3>HeadSafe</h3>
+                        <p>Proyecto enfocado en la seguridad y prevención de accidentes, pensado para ayudar a proteger
+                            a las personas mediante la tecnología. Fue uno de los proyectos más importantes en los que
+                            he trabajado o colaborado.</p>
+                        <p class="proyecto-tecnologias">Desarrollo web · Trabajo colaborativo</p>
+                        <a href="https://juanprevals.github.io/headsafe/" target="_blank" rel="noopener noreferrer">Ver
+                            proyecto ↗</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta-proyecto">
+                    <img src="static/images/proyecto2.jpg" alt="Proyecto Aegis">
+                    <div class="proyecto-info">
+                        <h3>AEGIS</h3>
+                        <p>Aplicación propuesta para enfrentar el acoso callejero que sufren las mujeres en la comuna de
+                            San Ramón. Utiliza un mapa interactivo con puntos de alerta para advertir a otros usuarios
+                            sobre lugares de riesgo, promoviendo la colaboración, la confianza y una comunidad más
+                            segura.</p>
+                        <p class="proyecto-tecnologias">Aplicación web · Mapa interactivo · Seguridad ciudadana</p>
+                        <a href="#" onclick="return false;">Ver prototipo ↗</a>
+                    </div>
+                </div>
+
+
+                <div class="tarjeta-proyecto">
+                    <img src="static/images/proyecto3.jpg" alt="Proyecto Taco Palace">
+                    <div class="proyecto-info">
+                        <h3>Taco Palace</h3>
+                        <p>Uno de mis primeros proyectos de desarrollo web, realizado cuando comenzaba a aprender HTML y
+                            CSS. Consistía en una página inspirada en un restaurante de tacos, con tarjetas para mostrar
+                            los productos, una sección destacada y un botón para realizar pedidos. Fue un proyecto
+                            importante en mis primeros pasos en la programación.</p>
+                        <p class="proyecto-tecnologias">HTML · CSS</p>
+                        <a href="#" onclick="return false;">Ver proyecto ↗</a>
+                    </div>
+                </div>  
+
+
+            </div>
+        </section>
         <!-- Contacto -->
         <section class="seccion" id="contacto">
             <p class="etiqueta">CONTACTO</p>
             <h2>¿Hablamos?</h2>
-            <p>Pronto agregaremos tu correo, LinkedIn y GitHub.</p>
-        </section>
+            <p>Puedes encontrarme o contactarme a través de estos enlaces.</p>
 
+            <div class="contacto-enlaces">
+                <a href="mailto:alexanderpino@liceovvh.cl">Correo electrónico ↗</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+        </section>
         <footer>
             <p>Mi portafolio personal · 2026</p>
         </footer>
-
     </main>
-
     <!-- Conexión con JS -->
     <script src="static/js/script.js" defer></script>
 </body>
